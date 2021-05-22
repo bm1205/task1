@@ -3,5 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, format: { with: /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ }
   
   has_secure_password
-  validates :password, presence: true, format: { with: /(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,32}/ }
+  validates :password, presence: true, format: { with: /(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,32}/ }\
+  
+  has_many :topics
 end
