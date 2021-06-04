@@ -17,6 +17,5 @@ Rails.application.routes.draw do
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
   get 'comments/new'
-  post 'comments/new', to: 'comments#create' 
   resources :commnets
 end
