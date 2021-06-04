@@ -20,9 +20,17 @@
             <%= topic.favorite_users.count %>
             
           
-           <%= image_tag 'comment.png', class: 'topic-index-icon' %>
+           <%= link_to comments_new_path do %>
+            <%= image_tag 'comment.png', class: 'topic-index-icon' %>
+           <% end %>
             <p class="topic-text">
              <%= topic.description %>
+            </p>
+            <P class="comment-tytle">
+             コメント
+            </P>
+            <p class="comment-text">
+             
             </p>
          </div>
        </div>
