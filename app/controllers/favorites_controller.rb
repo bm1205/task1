@@ -2,6 +2,7 @@ class FavoritesController < ApplicationController
   
   def index
     @favorite_topics = current_user.favorite_topics
+    @comment_topics = current_user.comment_topics
   end
   
   def create
