@@ -2,7 +2,7 @@ class TopicsController < ApplicationController
   
   def index
     @topics = Topic.all.includes(:favorite_users)
-    @comment_topics = current_user.comment_topics
+    #@comment_topics = current_user.comment_topics
   end
   
   def new

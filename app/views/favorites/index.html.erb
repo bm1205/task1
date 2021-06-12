@@ -18,9 +18,9 @@
             <P class="comment-tytle">
              コメント
             </P>
-            <% @comment_topics.each do |c| %>
+            <% topic.comments.each do |comment| %>
             <p class="comment-text">
-             <%=  %>
+             <%= comment.text %>
             </p>
             <% end %>
          </div>

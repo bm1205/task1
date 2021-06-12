@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
   end
   
   def create
-     
+     binding.pry
     @topic_id = params[:topic_id]
     
     @comment = current_user.comments.new(comment_params)
